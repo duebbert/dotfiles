@@ -1,3 +1,17 @@
-- clean: []
-- link: {}
-- shell: []
+- clean:
+    ~/:
+      force: false
+    ~/.config:
+      recursive: true
+
+- link:
+    ~/.bashrc: bashrc
+    ~/.config/autostart/dropbox.desktop: config/autostart/dropbox.desktop
+    ~/.config/JetBrains/PyCharm2020.1/codestyles: pycharm/codestyles
+    ~/.config/kglobalshortcutsrc: kde/kglobalshortcutsrc
+    ~/.config/khotkeysrc: kde/khotkeysrc
+    ~/.config/konsolerc: kde/konsolerc
+
+- shell:
+    - git submodule update --init --recursive
+    - git submodule update --init --remote
