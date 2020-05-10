@@ -11,6 +11,11 @@
     ~/.config/kglobalshortcutsrc: kde/kglobalshortcutsrc
     ~/.config/khotkeysrc: kde/khotkeysrc
     ~/.config/konsolerc: kde/konsolerc
+    ~/.config/kwinrc: kde/kwinrc
+    ~/.config/kdeglobals: kde/kdeglobals
+    ~/.config/plasma-localerc: kde/plasma-localerc
+    ~/.config/plasmashellrc: kde/plasmashellrc
+    ~/.config/powermanagementprofilesrc: kde/powermanagementprofilesrc    
 
 - shell:
     - git submodule update --init --recursive
