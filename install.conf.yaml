@@ -6,8 +6,12 @@
 
 - link:
     ~/.bashrc: bashrc
-    ~/.config/autostart/dropbox.desktop: config/autostart/dropbox.desktop
-    ~/.config/JetBrains/PyCharm2020.1/codestyles: pycharm/codestyles
+    ~/.config/autostart/dropbox.desktop:
+        create: true
+        path: config/autostart/dropbox.desktop
+    ~/.config/JetBrains/PyCharm2020.1/codestyles: 
+        create: true
+        path: pycharm/codestyles
     ~/.config/kglobalshortcutsrc: kde/kglobalshortcutsrc
     ~/.config/khotkeysrc: kde/khotkeysrc
     ~/.config/konsolerc: kde/konsolerc
@@ -15,7 +19,10 @@
     ~/.config/kdeglobals: kde/kdeglobals
     ~/.config/plasma-localerc: kde/plasma-localerc
     ~/.config/plasmashellrc: kde/plasmashellrc
-    ~/.config/powermanagementprofilesrc: kde/powermanagementprofilesrc    
+    ~/.config/powermanagementprofilesrc: kde/powermanagementprofilesrc
+    ~/.config/keepassxc/keepassxc.ini:
+        create: true
+        path: keepassxc/keepassxc.ini
 
 - shell:
     - git submodule update --init --recursive
